@@ -4,11 +4,9 @@
 This project demonstrates a pipeline for stock prediction using Apple Inc. (AAPL) as an example. The pipeline includes web scraping, data collection, and model training, combining FinBERT-based sentiment analysis with BiLSTM time-series forecasting.
 
 ## Data
-The `data` folder contains:
-- `AAPL_Merge_2024-07-10.csv`: A CSV file with historical stock price data, sentiment scores, and the number of news headlines analyzed for each day.
+`AAPL_Merge_2024-07-10.csv`: A CSV file with historical stock price data, sentiment scores, and the number of news headlines analyzed for each day.
 
 ## Source Code
-The `src` folder contains:
 - `BiLSTM.ipynb`: A Jupyter notebook for training the BiLSTM model using the merged data.
 - `update_data.ipynb`: A Jupyter notebook to collect the most recent stock price data.
 - `update_news.ipynb`: A Jupyter notebook to scrape the web for news articles related to AAPL, save the news headline summary and other information, and perform sentiment analysis with FinBERT to extract an average sentiment score for each day.
